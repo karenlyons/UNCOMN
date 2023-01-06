@@ -1,0 +1,415 @@
+/* 
+	Site name:		UNCOMN Intranet 
+	URL: 			https://aegisstrategiesllc.sharepoint.com.mcas.ms/
+	Author: 		Karen Lyons
+	Created: 		4/1/22
+	Description:	Custom CSS and SharePoint Overrides
+	Copyright: 		©2022 SileoTech. All Rights Reserved.
+*/
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;p
+}
+
+#spPageCanvasContent .SPCanvas > div > div > div {
+	margin: 0 !important;
+	max-width: 100% !important;
+}
+#spPageCanvasContent > .SPCanvas > .SPCanvas-canvas > .CanvasComponent > .Canvas.grid {
+	max-width: 100% !important;
+}	
+	
+.carouselItemWrapper > div > div > div {
+	/*background-color: #fff !important;*/
+}
+.bold {
+	font-weight: bold;
+}
+div[class^="mainHeader"] {
+	/*display: none;*/
+}
+div[data-automationid="SiteHeader"],
+div[data-automationid="ShyHeader"] {
+	/*height: 80px !important;*/
+}
+
+div[data-automationid="ShyHeader"] {
+	/*height: 80px !important;*/
+	display: none !important;
+}
+
+div[class^="adjacentTitleSubcell"] { 
+	padding-left: 0 !important;
+}
+span[data-automationid="SiteHeaderTitle"] {
+	/*display: none;*/
+}
+
+.SPCanvas {
+	background: #F3F2F1;
+}
+
+/* SPINNER */
+.ms-Overlay.ms-Overlay--dark .ms-Stack div[class^="css"] {
+	max-width: 100% !important;
+}
+
+.ms-Spinner div[class^="root"] {
+	min-height: 500px !important;
+}
+
+.ms-spinner-circle div[class^="circle"] {
+	height: 100px !important;
+	width: 100px !important;
+}
+
+/* Hub nav */
+.ms-HubNav,
+.sp-App-hubNav > div {
+	background: #F18C20 !important;
+}
+
+
+div[class^="bottomNavRow-"] {
+	background: #FBDBBA;
+	/*display: none !important;*/
+}
+
+
+.sp-pageLayout-horizontalNav .ms-HubNav a,
+.sp-pageLayout-horizontalNav .ms-HubNav .ms-HorizontalNav .ms-HorizontalNavItem-link.is-not-selected, 
+.sp-pageLayout-horizontalNav .ms-HubNav .ms-HorizontalNav .ms-HorizontalNavItem-link.is-header,
+.sp-pageLayout-horizontalNav .ms-HubNav-enhancedMegaMenu button,
+.sp-pageLayout-horizontalNav .ms-HorizontalNav button,
+.sp-pageLayout-horizontalNav .ms-HorizontalNavItems button i,
+.ms-HorizontalNavItem-link,
+.ms-HorizontalNavItem-splitbutton,
+.ms-HubNav-link,
+.ms-HorizontalNavItems button i {
+	color: #fff !important;
+}
+
+ul.ms-ContextualMenu-list.is-open,
+.ms-ContextualMenu-link.is-expanded:hover,
+button.ms-ContextualMenu-link.is-expanded {
+	background: #00ACBA;
+} 
+
+ul.ms-ContextualMenu-list.is-open a,
+ul.ms-ContextualMenu-list.is-open button {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+ul.ms-ContextualMenu-list.is-open li button:hover,
+.ms-ContextualMenu-item button:hover,
+ul.ms-ContextualMenu-list.is-open li.ms-ContextualMenu-item:hover,
+.ms-ContextualMenu-list.is-open a[role="menuitem"]:hover {
+	background: #009aa8;
+}
+
+.ms-DetailsHeader .ms-DetailsHeader-cell:hover,
+div[class^="cellIsGroupExpander"]:hover {
+	background: #fdecda;
+}
+
+.ms-DetailsList-headerWrapper div[role="row"] div:hover
+.ms-ContextualMenu-link.is-expanded:hover,
+.ms-ContextualMenu-link.is-expanded button[class^="root"] {
+	background: #fdecda !important;
+}
+
+ul.ms-ContextualMenu-list.is-open i {
+	color: #fff;
+}
+ul.ms-ContextualMenu-list.is-open a, 
+ul.ms-ContextualMenu-list.is-open button,
+.menuPropsClass button,
+.menuPropsClass button:hover {
+	background-color: inherit !important;
+}
+
+/* Page Header */
+img[class^="shyLogoImg"],
+img[class^="logoImg"] {
+	max-height: inherit !important;
+	max-width: inherit !important;
+}
+div[data-automationid="ShyHeader"] .ms-HorizontalNavItems {
+	padding-top: 31px !important;
+}
+div[data-automation-id="overlay-text-wrapper"] {
+	font-weight: 300 !important;
+}
+div[data-automation-id="TitleTextId"] {
+	padding-top: 20px;
+}
+div[data-automation-id="authorByLine"] {
+	display: none;
+}
+div[data-automation-id="pageHeader"] {
+	background: #F3F2F1 !important;
+	/*display: none;*/
+}
+div[data-sp-feature-tag="PageTitle"] .webPartContainer,
+div [data-sp-feature-tag="PageTitle"] .webPartContainer > div,
+div[data-sp-feature-tag="PageTitle"] > div > div > div > div > div,
+div[data-automation-id="titleToolbar"] {	
+	max-height: 120px;
+}
+
+div[data-sp-feature-tag="PageTitle"] > div > div > div > div > div {
+	justify-content: flex-start;
+}
+div[data-automationid="SiteHeader"],
+div[data-automationid="ShyHeader"] {
+	animation-duration: 0s;
+	animation-delay: 0s;
+}
+div[data-automationid="SiteHeader"] div[class^="logoCell"],
+div[data-automationid="ShyHeader"] div[class^="logoCell"] {
+	margin-right: 16px;
+}
+div[data-automationid="ShyHeader"] [data-navigationcomponent="SiteHeader"] {
+	margin-right: 0px;
+}
+/*
+div[class$="9f38462c"] div[class$="9f38462c"] div[class$="9f38462c"] {
+	justify-content: inherit !important;
+	margin: 0 !important;
+}
+div[data-automation-id="webPartContainer"] div[class="webPartContainer"] div div:last-child div {
+	padding-left: 0 !important;
+}
+[dir=ltr] :not(.withVerticalSection) div[class$="9f38462c"] {
+	padding-left: 0 !important;
+}
+
+div[title="_TemplateContent"] {
+	background: black !important;
+	font-weight: 400 !important;
+	margin-top: 40px;
+	opacity: .6 !important;
+	padding: 30px 60px !important;
+	text-indent: 100px;
+}
+div[class$="9f38462c"] div[data-alignment="Left"] {
+	height: auto !important;
+	width: auto !important;
+}
+div[class$="9f38462c"] div[data-alignment="Left"] > div:first-child {
+	background: black !important;
+}
+*/
+
+/* Web Parts */
+.ms-DetailsList-headerWrapper > div,
+div[data-automation-id="detailsListContainer"] {
+	padding-top: 0;
+}	
+.ms-GroupHeader > div {
+	background: #e7eaed;
+	border-top: 4px solid #F18C20;
+	font-weight: 500;
+	margin-bottom: 7px;
+}
+.ms-GroupHeader-title span {
+	font-weight: 500;
+}
+div[data-automation-id="fields"] div[data-automation-id="captionElement"] {
+	height: 35px;
+}
+.ms-TagItem {
+	background: #fff !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.ms-TagItem-text {
+	margin: 0;
+} 
+div[data-sp-feature-tag^="FieldsWebPart"] h3 {
+	font-size: 14px;
+	font-weight: 500;
+}
+div[data-automation-id="field"] h3 {
+	margin-bottom: 0;
+}
+/*div[class^="title"] span {
+	color: red;
+}*/
+
+div[data-sp-feature-tag="imageGallery"] div[data-automation-id="captionElement"] {
+	color: #F18C20;
+}
+
+div[data-sp-feature-tag^="FieldsWebPart"] span[role="heading"],
+div[data-automation-id="webpartHeader"] span[role="heading"],
+div[data-automation-id="webPartHeader"] div[data-automation-id="captionElement"] span[role="heading"],
+div[data-automation-id="textBox"] h2,
+div[data-sp-feature-tag^="TwitterWebPart"] span[role="heading"],
+div[data-sp-feature-tag^="GroupCalendarWebPart"] span[role="heading"],
+div[data-sp-feature-tag^="ImageGalleryWebPart"] > div > div[data-automation-id="captionElement"] span {
+	border-bottom: 2px solid #f59e1e;
+	color: #F18C20 !important;
+	display: inline-block;
+	font-size: 20px; 
+	padding-bottom: 5px;
+	width: auto !important;
+}
+
+.carouselItemWrapper div > div > div > div > div {
+	font-size: 500 !important;
+	padding: 0 0 0 18px;
+}
+
+.carouselItemWrapper div > div > div > div > div h3 {
+	font-size: 18px !important;
+	padding-left: 0 0 0 18px;
+}
+.carouselItemWrapper div > div > div> div > div > h3 + div {
+	padding: 0 18px 18px 0;
+	margin-top: 0 !important;
+}
+
+.carouselItemWrapper div > div > div> div > div > h3 + div > div {
+	padding: 0;
+}
+
+div[data-automation-id="textBox"] h2 a {
+	margin-bottom: none !important;
+	text-decoration: none !important;
+}
+div[class^="actionsSubcell"] button {
+	display: inline-block !important;
+}
+.sp-card-label {
+	font-weight: 500;
+}
+div[data-automation-id="CanvasControl"] {		
+	background-color: white;
+	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+	/*padding: 15px !important;*/
+}
+/* bulleted text */
+[dir=ltr] .cke_editable ul,
+[dir=ltr] .cke_editable ol {
+	font-size: inherit !important;
+}
+.noBorder.sp-card-container,
+.noBorder.sp-card-subContainer {
+	border-radius: 0 !important;
+	box-shadow: 0 !important;
+	padding: 0 !important;
+}
+.noBorder .sp-css-borderColor-neutralLight {
+	border: 0 !important;
+}
+.noBorder .sp-card-container.sp-card-defaultClickButton {
+	background-color: #fff;
+}
+.noBorder button {
+	padding: 0 !important;
+}
+div[data-automationid="DetailsHeader"] {
+	padding-top: 0 !important;
+}
+div[aria-label^="Quick links List"] div[data-automation-id="button-card"] {
+	/*background-image: linear-gradient(#8BC248,#5D9A42);*/
+	border: 0px; 
+}
+
+.ms-DetailsRow {
+	width: 100%;
+}
+
+.ms-DetailsHeader {	
+	background: #fbdbba;
+}
+
+.ms-List-cell div[class^="root"],
+.ms-DetailsRow-cell div {
+	font-size: 14px !important;
+}
+
+div[data-sp-feature-tag^="GroupCalendarWebPart"] div.ms-FocusZone > div:nth-child(1) {
+	background: #F18C20 !important;
+}
+
+div[data-sp-feature-tag^="GroupCalendarWebPart"] div.ms-FocusZone > div:nth-child(1) div{
+	color: #FFF !important;
+}
+
+div[data-sp-feature-tag^="GroupCalendarWebPart"] div.ms-FocusZone > div:nth-child(2) {
+	background: #FFF !important;
+}
+
+div[data-sp-feature-tag^="GroupCalendarWebPart"] a.ms-Link {
+	color: #FFF !important;
+}
+
+div[aria-label^="Quick links List"] a {
+	border: 0 !important;
+}
+
+div[aria-label^="Quick links List"] div[role="img"] i,
+div[aria-label^="Quick links List"] [data-automation-id="quick-links-item-title"] {
+	color: #fff !important;
+}
+div[aria-label^="Quick Links."] div[role="listitem"] a.ButtonCard {
+	background-color: rgb(73, 130, 5);
+}
+div[aria-label^="Quick Links."] div[role="listitem"] a.ButtonCard:hover {
+	Opacity: .8;
+}
+button[data-automationid="FieldRenderer-title"] {
+	font-size: 12px !important;
+}
+div[class^="cell-"] {
+	width: 100% !important;
+}
+
+/* Calendar Preview */
+.ms-Stack.ms-Card > div[data-automation-id="empty-state-preview"],
+.ms-Stack.ms-Card > div[data-automation-id="compact-card-preview"] {
+	background-color: #f18c20;
+}
+.ms-Stack.ms-Card > div[data-automation-id="compact-card-preview"] span {
+	color: #fff !important;
+}
+div[data-sp-feature-tag^="GroupCalendarWebPart"] button.ms-Link div {
+	font-size: inherit;
+}
+div[data-automation-id^="event"] {
+	font-size: inherit;
+}
+div[data-automation-id^="event"] a {
+	color: #fff;
+}
+
+/* PEOPLE SEARCH */
+.peopleTitle {
+	margin-bottom: 0 !important;
+}
+
+.peopleJobTitle {
+	margin-top: 0 !important;
+}
+
+/* Hide OOTB Footer */
+div[data-viewport-id^="Page.SiteFooter"] {
+	display: none !important;
+}
+@media screen and (min-width: 1024px) {
+	div[data-automation-id="CanvasZone"] > div,
+	.webPartContainer > div > div {
+		margin: 0 !important;
+		max-width: 100% !important;
+	}
+}
+@media screen and (min-width: 640px) {
+
+}

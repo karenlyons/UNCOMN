@@ -1,0 +1,86 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.app {
+  .top {
+      height: 60px;
+      
+    header {
+      line-height: 2.5;
+      display: flex;
+      background-color: #faf9f8;
+      color: inherit;
+      justify-content: space-between;
+
+      .logo {
+        margin: 5px;
+      }
+      .headerIcons {
+        height: 52px;
+        margin: 4px;
+        width: 389px;
+      }
+      .weather {
+         padding: 10px;
+         text-align: center;
+
+        .degrees {
+          color: #54565b;
+          font-size: 36px;
+          line-height: 30px;
+        }
+        .location {
+          font-size: 12px;
+        }
+      }
+    }
+    nav {
+      background: white;
+    }
+  }
+  .bottom {
+      height: 40px;
+      line-height: 2.5;
+      font-weight: bold;
+      display: flex;
+      align-items: left;
+      background-color: $ms-color-themePrimary;
+      color: $ms-color-white;
+      padding-left: 20px;
+  }
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: small;
+  padding: 5px;
+  width: 100%;   
+  }
+
+  .copyright { 
+    display: inline-block;    
+    margin-left: 20px;
+  }
+  
+  .websiteFeedback {
+    background: #e48f3e;
+    display: inline-block;  
+    float: right;
+    margin: -1px 40px 1px;
+    padding: 1px 20px;
+    text-align: center;
+
+    &:hover {
+      opacity: .8;
+    }
+
+      a {
+        color: #fff;
+        text-decoration: none !important;
+
+        &:hover {
+          background: inherit;
+          color: inherit;
+        }
+      }
+  }  

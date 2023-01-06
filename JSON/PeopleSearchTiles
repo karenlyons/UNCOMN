@@ -1,0 +1,177 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+    "height": 435,
+    "width": 254,
+    "hideSelection": false,
+    "fillHorizontally": true,
+    "formatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "card-container"
+      },
+      "children": [
+        {
+          "elmType": "button",
+          "attributes": {
+            "class": "sp-card-defaultClickButton",
+            "role": "presentation"
+          },
+          "customRowAction": {
+            "action": "defaultClick"
+          }
+        },
+        {
+          "elmType": "div",
+          "attributes": {
+            "class": "ms-bgColor-white sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-card-previewColumnContainer"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "attributes": {
+                    "class": "sp-card-imageContainer"
+                  },
+                  "children": [
+                    {
+                      "elmType": "div",
+                      "attributes": {
+                        "class": "ms-bgColor-neutralLight sp-card-imagePreviewBackground"
+                      },
+                      "children": [
+                        {
+                          "elmType": "img",
+                          "style": {
+                            "border-radius": "50%",
+                            "display": "=if([$Name.picture] == '', 'none', '')",
+                            "height": "100px",
+                            "max-width": "100px",
+                            "margin": "auto"
+                          },
+                          "attributes": {
+                            "src": "='/_layouts/15/userphoto.aspx?size=L&accountname='+[$Name.email]",
+                            "title": "@currentField.title",
+                            "class": "sp-card-imagePreview"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-card-displayColumnContainer peopleTitle"
+              },
+              "children": [
+                {
+                  "elmType": "p",
+                  "attributes": {
+                    "title": "[$Name.title]",
+                    "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-highlightedContent",
+                    "role": "heading",
+                    "aria-level": "3"
+                  },
+                  "txtContent": "=if ([$Name.title] == '', '', [$Name.title])"
+                }
+              ]
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-card-displayColumnContainer peopleJobTitle"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "attributes": {
+                    "title": "[$JobTitle]",
+                    "class": "ms-fontColor-neutralPrimary sp-card-content sp-field-italic"
+                  },
+                  "txtContent": "=if ([$JobTitle] == '', '', [$JobTitle])"
+                }
+              ]
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-card-displayColumnContainer"
+              },
+              "children": [
+                {
+                  "elmType": "p",
+                  "attributes": {
+                    "class": "ms-fontColor-neutralSecondary sp-card-label"
+                  },
+                  "txtContent": "Contact"
+                },
+                {
+                  "elmType": "a",
+                  "style": {
+                    "display": "=if([$Name.email] == '', 'none', 'block')",
+                    "width": "95%"
+                  },
+                  "attributes": {
+                    "class": "ms-fontColor-neutralPrimary sp-card-label"
+                  },
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "attributes": {
+                        "iconName": "Mail",
+                        "class": "ms-fontColor-themePrimary"
+                      },
+                      "style": {
+                        "padding-right": "6px"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "txtContent": "[$Name.email]",
+                      "attributes": {
+                        "href": "='mailto:'+ [$Name.email] + '?Subject=UNCOMN People Search'"
+                      }
+                    }
+                  ],
+                  "defaultHoverField": "[$Name]"
+                },
+                {
+                  "elmType": "span",
+                  "style": {
+                    "display": "=if([$PhoneNum] == '', 'none', 'block')",
+                    "width": "95%"
+                  },
+                  "attributes": {
+                    "class": "ms-fontColor-neutralPrimary sp-card-label"
+                  },
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "attributes": {
+                        "iconName": "Phone",
+                        "class": "ms-fontColor-themePrimary"
+                      },
+                      "style": {
+                        "padding-right": "6px"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "txtContent": "[$PhoneNum]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "uncomn-common-library-library": {
+      "components": [
+        {
+          "entrypoint": "./lib/libraries/uncomnCommonLibrary/UncomnCommonLibraryLibrary.js",
+          "manifest": "./src/libraries/uncomnCommonLibrary/UncomnCommonLibraryLibrary.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "UncomnCommonLibraryLibraryStrings": "lib/libraries/uncomnCommonLibrary/loc/{locale}.js"
+  }
+}

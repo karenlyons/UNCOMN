@@ -1,0 +1,39 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+footer {
+	background-color: #1d1d1d;
+	color: #fff;
+	font-size: small;
+	padding: 5px;
+	width: 100%;   
+}
+
+.copyright { 
+	display: inline-block;    
+	margin-left: 20px;
+}
+
+.websiteFeedback {
+	background: #F18C20;
+	border: 1px solid #fff;
+	display: inline-block;  
+	float: right;
+	margin: -1px 40px 1px;
+	padding: 1px 20px;
+	text-align: center;
+
+	&:hover {
+		background: #f59e1e;
+		color: #fff;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none !important;
+
+		&:hover {
+			background: inherit;
+			color: inherit;
+		}
+	}
+}  

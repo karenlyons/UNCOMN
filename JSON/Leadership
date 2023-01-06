@@ -1,0 +1,144 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "hideColumnHeader": true,
+  "hideSelection": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "='leadership'"
+    },
+    "style": {
+      "border-bottom": "2px solid orange",
+      "display": "table",
+      "float": "left",
+      "margin-bottom": "10px",
+      "padding-bottom": "10px",
+      "width": "100%"
+    },
+    "children": [
+      {
+        "elmType": "img",
+        "attributes": {
+          "src": "='/_layouts/15/userphoto.aspx?size=M&accountname='+[$Leader.email]",
+          "title": "@currentField.title"
+        },
+        "style": {
+          "border-radius": "50%",
+          "display": "table-cell",
+          "margin-right": "10px",
+          "vertical-align": "top"
+        },
+        "children": [],
+        "defaultHoverField": "[$Leader]"
+      },
+      {
+        "elmType": "span",
+        "txtContent": "@currentField.title"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "table-cell",
+          "text-align": "left",
+          "min-width": "11em",
+          "padding-right": "10px",
+          "vertical-align": "top"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "='ms-fontSize-m ms-fontWeight-regular'"
+            }
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Leader.title]",
+            "style": {
+              "font-size": "1.2em",
+              "font-weight": "600",
+              "white-space": "nowrap"
+            }
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Title]",
+            "style": {
+              "font-size": "12px",
+              "font-weight": "600",
+              "font-style": "italic"
+            }
+          },
+          {
+            "elmType": "div",
+            "txtContent": "[$Department]",
+            "style": {
+              "display": "=if([$Department] == '', 'none','block')",
+              "font-size": "12px",
+              "font-weight": "600",
+              "margin-top": "5px",
+              "min-width": "9em"
+            }
+          }
+        ],
+        "defaultHoverField": "[$Leader]"
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "display": "table-cell",
+          "text-align": "left",
+          "vertical-align": "top",
+          "width": "100%"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "='ms-fontSize-m ms-fontWeight-regular'"
+            }
+          },
+          {
+            "elmType": "a",
+            "txtContent": "[$LeaderUrl.desc]",
+            "style": {
+              "background-color": "#4AAAB8",
+              "color": "#FFFFFF",
+              "display": "=if([$LeaderUrl] == '', 'none','block')",
+              "font-size": "12px",
+              "min-width": "9em",
+              "margin-bottom": "5px",
+              "max-width": "9em",
+              "padding": "5px 10px",
+              "text-decoration": "none",
+              "white-space": "nowrap"
+            },
+            "attributes": {
+              "href": "=[$LeaderUrl]"
+            }
+          },
+          {
+            "elmType": "a",
+            "txtContent": "Connect With Me!",
+            "style": {
+              "background-color": "#4AAAB8",
+              "color": "#FFFFFF",
+              "display": "block",
+              "font-size": "12px",
+              "margin-top": "5px",
+              "margin-bottom": "5px",
+              "min-width": "9em",
+              "max-width": "9em",
+              "padding": "5px 10px",
+              "text-decoration": "none",
+              "white-space": "nowrap"
+            },
+            "attributes": {
+              "href": "='mailto:'+[$Leader.email]+'?Subject=Connect with Me! - Commercial Growth'"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "5def4744-6326-439c-8c83-a2d588f7f187",
+  "alias": "UncomnCommonLibraryLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}

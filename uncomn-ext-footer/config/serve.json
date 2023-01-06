@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://aegisstrategiesllc.sharepoint.com.mcas.ms/SitePages/Home.aspx",
+      "customActions": {
+        "919d89eb-f987-4123-b11b-d9c96ea42a7a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "",
+            "Bottom": "",
+            "enableLogging": "true",
+            "hubCssUrl": "uncomn.css"
+          }
+        }
+      }
+    },
+    "uncomnFooter": {
+      "pageUrl": "https://aegisstrategiesllc.sharepoint.com.mcas.ms/SitePages/Home.aspx",
+      "customActions": {
+        "919d89eb-f987-4123-b11b-d9c96ea42a7a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "",
+            "Bottom": "",
+            "enableLogging": "true",
+            "hubCssUrl": "uncomn.css"
+          }
+        }
+      }
+    }
+  }
+}

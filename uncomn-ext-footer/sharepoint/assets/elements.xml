@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="UncomnFooter"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="919d89eb-f987-4123-b11b-d9c96ea42a7a"
+        ClientSideComponentProperties="{&quot;enableLogging&quot;: &quot;true&quot;,&quot;hubCssUrl&quot;: &quot;/uncomn.css&quot;}">
+    </CustomAction>
+</Elements>

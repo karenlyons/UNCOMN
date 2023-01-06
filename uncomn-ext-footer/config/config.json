@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "uncomn-footer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/uncomnFooter/UncomnFooterApplicationCustomizer.js",
+          "manifest": "./src/extensions/uncomnFooter/UncomnFooterApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "UncomnFooterApplicationCustomizerStrings": "lib/extensions/uncomnFooter/loc/{locale}.js"
+  }
+}
